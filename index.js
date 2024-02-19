@@ -1,10 +1,6 @@
-const express = require("express");
+const app = require("./app")
+const port = 10000;
 
-var app = express();
-
-app.get("/", function (request, response) {
-    response.send("Something here!")
-})
-app.listen(10000, function () {
-    console.log("Started application on port %d", 10000)
+app.listen(port, () => {
+  console.log(`Books API listening at http://localhost:${port}`);
 });
