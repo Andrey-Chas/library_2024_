@@ -6,7 +6,7 @@ const router = new Router()
 // export our router to be mounted by the parent application
 module.exports = router
 
-app.get('/', function (req, res) {
+router.get('/', function (req, res) {
   res.render('login', {
     title: 'Register',
   });
